@@ -260,7 +260,7 @@
 			"󰕾",
 			""
 		],
-		"on-click": "$HOME/.config/scripts/toggle-mute.sh sink",
+		"on-click": "$HOME/.scripts/toggle-mute.sh sink",
 		"on-click-right": "pavucontrol -t 3",
 		"max-volume": 100,
 		"scroll-step": 5
@@ -269,7 +269,7 @@
 		"node-type": "Audio/Source",
 		"format": "<span color='#89b4fa'></span> {volume}%",
 		"format-muted": "<span color='#f38ba8'></span> {volume}%",
-		"on-click": "$HOME/.config/scripts/toggle-mute.sh source",
+		"on-click": "$HOME/.scripts/toggle-mute.sh source",
 		"scroll-step": 5
 	},
 	"pulseaudio": {
