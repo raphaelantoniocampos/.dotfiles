@@ -23,7 +23,6 @@ while true; do
           if [ "$bat_status" != "$last_status" ]; then
             notify-send -u low "Charging - ${bat_lvl}%"
             paplay "$SND_PLUG" >/dev/null 2>&1 &
-            brightnessctl set 100%
             last_notify=$bat_status
           fi
         ;;

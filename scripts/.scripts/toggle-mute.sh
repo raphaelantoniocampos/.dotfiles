@@ -24,8 +24,6 @@ STATE=$(wpctl get-volume "$NODE")
 
 if [[ "$STATE" == *"[MUTED]"* ]]; then
     notify-send -u critical -t 2000 "$LABEL: MUTED $ICON_MUTED"
-    paplay "$SND_OFF" >/dev/null 2>&1 &
 else
     notify-send -u low -t 2000 "$LABEL: UNMUTED $ICON_UNMUTED"
-    paplay "$SND_ON" >/dev/null 2>&1 &
 fi
