@@ -3,10 +3,12 @@
 WALLPAPER_DIR="$HOME/Pictures/wallpapers/"
 
 if [[ "$1" == "random" ]]; then
-    IMAGE=$(find "$WALLPAPER_DIR" | shuf -n 1)
-    
+       IMAGE=$(find "$WALLPAPER_DIR" \
+        -type f \
+        -not -path '*/.*' | shuf -n 1) 
+
     if [ -z "$IMAGE" ]; then
-        notify-send "Erro" "Nenhum wallpaper encontrado no diretório."
+        notify-send "Error" "No wallpapers found in the directory."
         exit 1
     fi
 else
