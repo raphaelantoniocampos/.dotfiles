@@ -69,12 +69,6 @@ return {
     },
 
     {
-      'nyoom-engineering/oxocarbon.nvim',
-      lazy = false,
-      priority = 1000,
-    },
-
-    {
       'drewxs/ash.nvim',
       lazy = false,
       priority = 1000,
