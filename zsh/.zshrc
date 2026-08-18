@@ -1,43 +1,20 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -v
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-fastfetch
+source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 
-# End of lines configured by zsh-newuser-install
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# The following lines were added by compinstall
-
-zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/raphaelac/zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-bindkey '^[[1;5D' backward-word     # Ctrl+Left
-bindkey '^[[1;5C' forward-word      # Ctrl+Right
-bindkey '^H' backward-kill-word     # Ctrl+Backspace
-WORDCHARS=${WORDCHARS//\/[&.;]}
-
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-
-# Alias
 alias cat="bat"
-alias cd="z"
 alias icat="kitty icat"
 alias lg="lazygit"
 alias trp="trash-put"
 alias ls="lsd"
 alias uvr="uv run"
-alias pclean="sh ~/.scripts/pclean.sh"
-alias rm='echo "This is not the command you are looking for, try trp. (If you really want it use \rm)"; false'
 alias ff="fastfetch"
 alias v="nvim"
-
-# Old Suse alias
-# alias zup="sudo -E sh ~/.config/scripts/zup.sh"
-# alias zclean="sudo -E sh ~/.config/scripts/zclean.sh"
