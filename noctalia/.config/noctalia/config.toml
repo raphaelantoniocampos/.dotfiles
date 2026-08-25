@@ -2,9 +2,9 @@
 ui_scale = 1.20
 
 [bar.default]
-start = [ "launcher", "spacer_1","workspaces",  "active_window", ]
+start = [ "launcher", "spacer_1","workspaces",  "spacer_1", "active_window", ]
 center = [ "clock",  "spacer_1", "weather" ]
-end = [ "media", "spacer_1", "tray", "group:g1", "volume", "network", "battery", "power_profile", "notifications", "session" ]
+end = [ "media", "spacer_1", "tray", "group:g1", "brightness", "volume", "network", "battery", "power_profile", "notifications", "session" ]
 concave_edge_corners = true
 margin_edge = 0
 margin_ends = 0
@@ -140,7 +140,7 @@ color = "secondary"
 active_pill_size = 1.0
 inactive_pill_size = 1.0
 pill_scale = 0.80
-show_labels = false
+show_labels = true
 
 [widget.battery]
 type = "battery"
