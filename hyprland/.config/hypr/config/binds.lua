@@ -131,9 +131,9 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"),
 
 -- Screen Capture
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a -n"))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
-hl.bind(mainMod .. "+ SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
 hl.bind("Print", hl.dsp.exec_cmd(noctCall .. "screenshot-fullscreen"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
 
 -- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
@@ -145,7 +145,6 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard")
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
 
 -- Power Management
-
 hl.bind("ALT + SHIFT + L", hl.dsp.exec_cmd(noctCall .. "session lock"))
 hl.bind("ALT + C", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 hl.bind("ALT + F4", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
