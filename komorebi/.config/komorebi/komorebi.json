@@ -50,11 +50,15 @@
       "matching_strategy": "Contains"
     },
     {
-
+      "kind": "Title",
+      "id": "Claude",
+      "matching_strategy": "Contains"
+    },
+    {
       "kind": "Title",
       "id": "Configurações",
       "matching_strategy": "Equals"
-  }
+    }
   ],
   "layered_applications": [
     {
