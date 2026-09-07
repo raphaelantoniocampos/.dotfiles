@@ -157,8 +157,8 @@ hl.bind("ALT + SHIFT + H", hl.dsp.exec_cmd(launchPrefix .. "systemctl hibernate"
 -------------------------------
 
 -- Focus on monitors
-hl.bind("ALT + 1", hl.dsp.focus({ monitor = MONITOR1 }))
-hl.bind("ALT + 2", hl.dsp.focus({ monitor = MONITOR2 }))
+-- hl.bind("ALT + 1", hl.dsp.focus({ monitor = MONITOR1 }))
+-- hl.bind("ALT + 2", hl.dsp.focus({ monitor = MONITOR2 }))
 
 -- Focus on workspace number
 -- Absolute
