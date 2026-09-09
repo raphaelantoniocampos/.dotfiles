@@ -25,3 +25,9 @@ function uvr
 {
     uv run $args
 }
+
+function km
+{
+    Stop-Process -Name whkd, komorebi, komorebi-bar -Force -ErrorAction SilentlyContinue
+    komorebic start --bar --whkd
+}
