@@ -4,7 +4,7 @@ ui_scale = 1.20
 [bar.default]
 start = [ "launcher", "spacer_1","workspaces",  "spacer_1", "active_window", ]
 center = [ "media", "spacer_1", "clock",  "spacer_1", "weather" ]
-end = [ "tray", "group:g1", "brightness", "volume", "network", "battery", "power_profile", "notifications", "session" ]
+end = [ "tray", "group:g1", "brightness", "output-volume", "input-volume", "network", "battery", "power_profile", "notifications", "session" ]
 concave_edge_corners = true
 margin_edge = 0
 margin_ends = 0
@@ -134,8 +134,14 @@ type = "sysmon"
 capsule = true
 capsule_fill = "on_secondary"
 
-[widget.volume]
-color = "secondary"
+[widget.input-volume]
+type = "volume"
+device = "input"
+hide_when_inactive = true
+
+[widget.output-volume]
+type = "volume"
+device = "output"
 
 [widget.workspaces]
 active_pill_size = 1.0
