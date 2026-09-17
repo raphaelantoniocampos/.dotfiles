@@ -1,6 +1,7 @@
 local mainMod = "SUPER"
 local noctCall = "noctalia msg "
 local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empty (e.g. "")
+local gamingWorkspace = "name:gaming"
 
 ---------------------------
 ---- WINDOW MANAGEMENT ----
@@ -49,6 +50,9 @@ for i = 1, NUM_WPM do
 	local key = i % 10
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = "m~" .. i }))
 end
+
+-- Gaming workspace
+hl.bind(mainMod .. " + SHIFT + G", hl.dsp.window.move({ workspace = gamingWorkspace }))
 
 -- Move & Resize with mouse
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
@@ -171,6 +175,8 @@ for i = 1, NUM_WPM do
 	local key = i % 10
 	hl.bind(mainMod .. " + ALT + " .. key, hl.dsp.focus({ workspace = "m~" .. i }))
 end
+
+hl.bind(mainMod .. " + G", hl.dsp.focus({ workspace = gamingWorkspace }))
 
 -- Move to adjacent workspaces and next empty on a given monitor
 hl.bind(mainMod .. " + CONTROL + Right", hl.dsp.focus({ workspace = "m+1" }))
