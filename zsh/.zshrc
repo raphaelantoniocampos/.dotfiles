@@ -18,6 +18,7 @@ alias ls="lsd"
 alias uvr="uv run"
 alias ff="fastfetch"
 alias v="nvim"
+alias z="cd"
 
 # Added by flyctl installer
 export FLYCTL_INSTALL="/home/raphaelac/.fly"
