@@ -149,8 +149,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard")
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications"))
 
 -- Power Management
-hl.bind("ALT + SHIFT + L", hl.dsp.exec_cmd(noctCall .. "session lock"))
-hl.bind("ALT + C", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
+hl.bind("ALT + SHIFT + E", hl.dsp.exec_cmd(noctCall .. "session lock"))
 hl.bind("ALT + F4", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 hl.bind("ALT + SHIFT + P", hl.dsp.exec_cmd(launchPrefix .. "systemctl poweroff"))
 hl.bind("ALT + SHIFT + R", hl.dsp.exec_cmd(launchPrefix .. "systemctl reboot"))
