@@ -2,9 +2,9 @@
 ui_scale = 1.20
 
 [bar.default]
-start = [ "launcher", "spacer_1","workspaces",  "spacer_1", "active_window", ]
+start = [ "launcher", "spacer_1","workspaces",  "spacer_1", "active_window", "tray" ]
 center = [ "media", "spacer_1", "clock",  "spacer_1", "weather" ]
-end = [ "tray", "group:g1", "brightness", "output-volume", "input-volume", "bluetooth", "network", "battery", "power_profile", "notifications", "session" ]
+end = [ "group:g1", "brightness", "output-volume", "input-volume", "bluetooth", "network", "battery", "power_profile", "notifications", "session" ]
 concave_edge_corners = true
 margin_edge = 0
 margin_ends = 0
