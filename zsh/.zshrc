@@ -20,6 +20,4 @@ alias ff="fastfetch"
 alias v="nvim"
 alias z="cd"
 
-# Added by flyctl installer
-export FLYCTL_INSTALL="/home/raphaelac/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
