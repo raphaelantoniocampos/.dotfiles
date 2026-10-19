@@ -19,6 +19,12 @@ alt + o                 : wt opencode
 alt + q                 : komorebic close
 alt + m                 : komorebic minimize
 
+# Translate - runs detached so it doesn't block the whkd shell
+alt + t                 : Start-Process pwsh -WindowStyle Hidden -ArgumentList '-NoProfile', '-File', "$HOME\.scripts\translate.ps1"
+alt + shift + t         : Start-Process pwsh -WindowStyle Hidden -ArgumentList '-NoProfile', '-File', "$HOME\.scripts\translate.ps1", 'auto'
+alt + ctrl + t          : Start-Process pwsh -WindowStyle Hidden -ArgumentList '-NoProfile', '-File', "$HOME\.scripts\translate.ps1", 'switch'
+alt + shift + ctrl + t  : Start-Process pwsh -WindowStyle Hidden -ArgumentList '-NoProfile', '-File', "$HOME\.scripts\translate.ps1", 'set'
+
 win + shift + e         : logoff
 win + shift + p         : shutdown -s -t 0
 win + shift + r         : shutdown -r -t 0
